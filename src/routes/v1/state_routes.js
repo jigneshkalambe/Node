@@ -3,9 +3,9 @@ const { state_Controller } = require("../../controllers");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
 
-router.post("/state_end", state_Controller.state_post_c);
+// router.post("/state_end", state_Controller.state_post_c);
 router.get("/list", state_Controller.state_get_list);
-router.post("/check", state_Controller.check);
+// router.post("/check", state_Controller.check);
 router.post("/create_token", async (req, res) => {
     try {
         const payload = req.body;
